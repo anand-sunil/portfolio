@@ -2,6 +2,7 @@
 import ProjectCard from '../components/ProjectCard';
 import imageClassificationImg from '../assets/image-classification.png';
 import emotionDetectionImg from '../assets/emotion-detection.png';
+import skillbridgeImg from '../assets/skillbridge.png';
 
 export default function Projects() {
     const projects = [
@@ -20,6 +21,14 @@ export default function Projects() {
             github: "https://github.com/anand-sunil/emotion-detection-project",
             live: null,
             image: emotionDetectionImg
+        },
+        {
+            title: "SkillBridge",
+            description: "A comprehensive job portal and course platform connecting professionals with companies.",
+            tech: ["Django", "Python", "MySQL", "Tailwind CSS"],
+            github: "https://github.com/anand-sunil/skillbridge",
+            live: null,
+            image: skillbridgeImg
         }
     ];
 

@@ -26,12 +26,10 @@ export default function About() {
 
                         <div className="space-y-8 text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl">
                             <p>
-                                I'm a <span className="text-white font-medium">Full Stack Developer</span> based in India. I specialize in building digital products that blend <span className="text-indigo-300">solid engineering</span> with <span className="text-purple-300">intuitive design</span>.
+                                Motivated aspiring Full-Stack Developer with a strong foundation in Python, Django, and modern frontend technologies including React and Tailwind CSS. Experienced in building responsive web applications, implementing RESTful APIs, integrating databases, and deploying projects using version control and hosting platforms. Eager to learn, collaborate in team environments, and contribute to scalable, user-focused digital solutions.
                             </p>
 
-                            <p>
-                                My philosophy is simple: write clean code, solve real problems, and never stop learning. I thrive in challenging environments where I can apply my <span className="text-white font-medium">technical skills</span> to build scalable solutions.
-                            </p>
+
 
                             <div className="flex gap-4 pt-4">
                                 <div className="pl-4 border-l-2 border-indigo-500/50">
