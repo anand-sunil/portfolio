@@ -1,37 +1,8 @@
 
 import ProjectCard from '../components/ProjectCard';
-import imageClassificationImg from '../assets/image-classification.png';
-import emotionDetectionImg from '../assets/emotion-detection.png';
-import skillbridgeImg from '../assets/skillbridge.png';
+import projectsData from '../data/projectsData';
 
 export default function Projects() {
-    const projects = [
-        {
-            title: "Image Classification App",
-            description: "A machine learning application capable of classifying images into distinct categories with high accuracy.",
-            tech: ["Python", "Deep Learning", "Computer Vision"],
-            github: "https://github.com/anand-sunil/image-classification-app/tree/main/image-classification-app",
-            live: null,
-            image: imageClassificationImg
-        },
-        {
-            title: "Emotion Detection System",
-            description: "Real-time facial emotion recognition using deep learning.",
-            tech: ["Python", "Deep Learning", "OpenCV"],
-            github: "https://github.com/anand-sunil/emotion-detection-project",
-            live: null,
-            image: emotionDetectionImg
-        },
-        {
-            title: "SkillBridge",
-            description: "A comprehensive job portal and course platform connecting professionals with companies.",
-            tech: ["Django", "Python", "MySQL", "Tailwind CSS"],
-            github: "https://github.com/anand-sunil/skillbridge",
-            live: null,
-            image: skillbridgeImg
-        }
-    ];
-
     return (
         <section className="py-24 md:py-32 px-6">
             <div className="max-w-7xl mx-auto">
@@ -44,9 +15,22 @@ export default function Projects() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index} {...project} />
+                <div className="flex flex-wrap justify-center gap-10">
+                    {projectsData.map((project) => (
+                        <div 
+                            key={project.slug}
+                            className="w-full max-w-md mx-auto md:max-w-none md:mx-0 md:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-1.67rem)] flex flex-col"
+                        >
+                            <ProjectCard
+                                slug={project.slug}
+                                title={project.title}
+                                description={project.shortDescription}
+                                tech={project.tech}
+                                github={project.github}
+                                live={project.live}
+                                image={project.coverImage}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>

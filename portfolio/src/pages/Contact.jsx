@@ -68,7 +68,7 @@ export default function Contact() {
 
                         <div className="relative z-10 mt-12 pt-8 border-t border-white/5">
                             <p className="text-slate-500 text-sm font-medium">
-                                &copy; 2025 Anand Sunil. <span className="text-slate-400">Open to freelance & collaborative opportunities.</span>
+                                &copy; 2026 Anand Sunil. <span className="text-slate-400">Open to freelance & collaborative opportunities.</span>
                             </p>
                         </div>
                     </div>

@@ -19,6 +19,33 @@
   .animate-pulse-slow {
     animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+
+  /* Thumbnail scrollbar */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 999px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.5);
+  }
+
+  /* Line clamp for card descriptions */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 @keyframes fadeInUp {
